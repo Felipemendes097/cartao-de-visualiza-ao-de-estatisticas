@@ -1,0 +1,82 @@
+body {
+    background-color: var(--color-primary-very-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(min-width:900px) {
+
+
+    div.container {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+        width: 1100px;
+        height: 445px;
+        background-color: var(--color-primary-dark-desaturated);
+        border-radius: 7px;
+
+    }
+
+    div.container div.image {
+        background: linear-gradient(hsl(277, 100%, 25%, .514) 100%, rgba(255, 255, 255, 0)), url("../images/image-header-desktop.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+    }
+
+    div.txt-principal {
+        margin-left: 3em;
+        margin-right: 2em;
+        font-family: var(--font-inter);
+        color: var(--color-neutral-light);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.txt-principal h1.title {
+        font-size: 35px;
+        color: var(--color-neutral-light);
+        text-align: center;
+        margin: 1em;
+        padding: 0.5em;
+        word-spacing: 2px;
+    }
+
+    div.txt-principal p.txt {
+        font-size: 1.3em;
+        flex-wrap: wrap;
+    }
+
+    div.txt-principal div.details {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3em
+    }
+
+    .details .info {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+
+
+    }
+
+    .details .info .value {
+        font-family: var(--font-inter);
+        font-weight: 400;
+        color: var(--color-neutral-light);
+    }
+
+    .details .info .txt-value {
+        font-family: var(--font-inter);
+        font-weight: 400;
+        color: var(--color-neutral-slightly-transparent);
+    }
+}
